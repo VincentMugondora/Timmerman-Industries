@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.contact-pages {
+  display: none;
+}
+.exit {
+  display: none;
+}
+p{
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 15px;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+    }
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .contact-page {
+    display: none;
+  }
+
+  .contact-pages {
+    display: block;
+    position: relative;
+
+    .exit {
+      display: none;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 30px;
+    }
+
+    .content {
+      position: relative;
+      .row {
+        .images {
+          display: flex;
+          gap: 10px;
+          .img {
+            width: 60%;
+            height: 100%;
+          }
+          .img2 {
+            width: 40%;
+            height: 100%;
+          }
+        }
+        .text {
+          margin-left: 0px;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          h2 {
+            font-size: 3rem;
+          }
+          .line {
+            width: 20%;
+            height: 2px;
+            background-color: white;
+            border-radius: 1px;
+          }
+          .info {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+
+            .box {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-container {
+    position: relative;
+  }
+
+  .actives .contact-page {
+    display: block !important;
+  }
+
+  .actives .overlay1 {
+    background: rgba(0, 0, 0, 0.456);
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    padding: 3rem;
+
+    .exit {
+      margin-top: 30px;
+      display: block;
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+}
