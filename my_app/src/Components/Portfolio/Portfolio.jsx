@@ -6,7 +6,7 @@ import Image2 from "../../assets/images/portfolio (1).jpg";
 const Portfolio = () => {
   return (
     <>
-      <section className="portfolio container">
+      <section id='portfolios' className="portfolio container">
         <div className="row">
           <div className="col-md">
             <img src={Image} alt="" />
@@ -17,13 +17,20 @@ const Portfolio = () => {
                 <img src={Image1} alt="" />
               </div>
               <div className="img1 container">
-                <img className='vin' src={Image2} alt="" />
+                <img className="vin" src={Image2} alt="" />
               </div>
             </div>
             <div className="text container">
-                <h1>OUR PORTFOLIO</h1>
-                <div className="line"></div>
-                <p className='para-text'>View our outstanding works throughout the world. WE have done work for some of the most outstanding homes all over the world to view more of our work click the button below!</p>
+              <h1>OUR PORTFOLIO</h1>
+              <div className="line"></div>
+              <p className="para-text">
+                View our outstanding works throughout the world. WE have done
+                work for some of the most outstanding homes all over the world
+                to view more of our work click the button below!
+              </p>
+              <div>
+                <button>View More</button>
+              </div>
             </div>
           </div>
         </div>

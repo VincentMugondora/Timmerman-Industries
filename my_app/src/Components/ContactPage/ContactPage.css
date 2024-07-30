@@ -134,6 +134,9 @@ table {
 .exit {
   display: none;
 }
+.overlay2{
+  display: block;
+}
 p{
       font-weight: 500;
       letter-spacing: 1px;
@@ -238,21 +241,27 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: block !important;
   }
 
-  .actives .overlay1 {
+  .actives .overlay2 {
     background: rgba(0, 0, 0, 0.456);
-    width: 100%;
-    position: absolute;
+    width: 99.15vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
     z-index: 5;
-    /* align-items: center; */
     justify-content: center;
     display: flex;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    padding: 3rem;
+    margin: 0px;
+    margin-left: -14vh;
 
     .exit {
-      margin-top: 30px;
+      position: absolute;
+      right: 20px;
+      margin-top: 20px;
       display: block;
+      padding: 30px;
+      border-radius: 50%;
     }
   }
 }

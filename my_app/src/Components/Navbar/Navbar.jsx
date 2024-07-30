@@ -22,10 +22,46 @@ const Navbar = () => {
             <div className="line line3"></div>
           </div>
           <div className="links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>
-            <a href="#">Contact</a>
+            <a
+              href="#"
+              onClick={() => {
+                document.body.classList.remove("active");
+              }}
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              onClick={() => {
+                document.body.classList.remove("active");
+              }}
+            >
+              About
+            </a>
+            <a
+              href="#"
+              onClick={() => {
+                document.body.classList.remove("active");
+              }}
+            >
+              Service
+            </a>
+            <a
+              href="#"
+              onClick={() => {
+                document.body.classList.remove("active");
+              }}
+            >
+              Contact
+            </a>
+            <p
+              onClick={() => {
+                document.body.classList.remove("active");
+                document.body.classList.add("active1");
+              }}
+            >
+              Sign Up
+            </p>
           </div>
         </div>
 

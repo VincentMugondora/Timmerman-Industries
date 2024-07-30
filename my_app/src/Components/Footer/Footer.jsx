@@ -10,7 +10,14 @@ const Footer = () => {
             <a href="/about">About</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a
+              href="/contact"
+              onClick={() => {
+                document.body.classList.remove("actives");
+              }}
+            >
+              Contact
+            </a>
           </li>
           <li>
             <a href="/privacy">Privacy Policy</a>

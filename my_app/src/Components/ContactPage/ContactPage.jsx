@@ -6,7 +6,7 @@ import Img1 from "../../assets/images/contact (2).jpg"
 const ContactPage = () => {
   return (
     <div className="contact-container">
-      <div className="overlay1 container-fluid">
+      <div className="overlay2 container-fluid">
         <Contact />
         <div>
           <button
@@ -51,7 +51,8 @@ const ContactPage = () => {
               <div>
                 <button
                   onClick={() => {
-                    document.body.classList.add("actives");
+                    document.body.classList.toggle("actives");
+                    // document.body.!
                   }}
                 >
                   Send a Message

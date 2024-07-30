@@ -178,20 +178,36 @@ table {
     }
   }
 }
-.signup-container{
-  transform: translate(50%);
-}
 .overlay1{
-  display: none;
+  display: none !important;
+  position: fixed;
 }
 .active1 .overlay1{
-  display: block;
-  position: absolute;
+  z-index: 6;
+  display: block !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  /* position: absolute; */
+  top: 0px;
   height: 100vh;
   width: 100%;
   background: #0000007f;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+  overflow: hidden;
+}
+.signup-container{
+  align-self: center;
+  justify-self: center;
+  transform: translate(130%, 50%);
+}
+.exits{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 50%;
 }
 
 /*

@@ -38,7 +38,7 @@ const Team = () => {
   ];
 
   return (
-    <>
+    <div className="team">
       <h1 className="heading">MEET OUR TEAM</h1>
       <div className="card-cont container">
         {cards.map((card) => (
@@ -57,7 +57,7 @@ const Team = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
